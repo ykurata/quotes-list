@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Albert Einstein",
+        "quotes": [
+            "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.",
+            "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+            "If you can't explain it to a six year old, you don't understand it yourself.",
+            "Logic will get you from A to Z; imagination will get you everywhere.",
+            "Life is like riding a bicycle. To keep your balance, you must keep moving."
+        ]
+    },
+    {
+        "name": "Mark Twain",
+        "quotes": [
+            "If you tell the truth, you don't have to remember anything.",
+            "Good friends, good books, and a sleepy conscience: this is the ideal life.",
+            "Whenever you find yourself on the side of the majority, it is time to reform (or pause and reflect).",
+            "The man who does not read has no advantage over the man who cannot read.",
+            "Never put off till tomorrow what may be done day after tomorrow just as well."
+        ]
+    },
+    {
+        "name": "Oscar Wilde",
+        "quotes": [
+            "Be yourself; everyone else is already taken.",
+            "Always forgive your enemies; nothing annoys them so much.",
+            "To live is the rarest thing in the world. Most people exist, that is all.",
+            "I am so clever that sometimes I don't understand a single word of what I am saying.",
+            "We are all in the gutter, but some of us are looking at the stars."
+        ]
+    },
+    {
+        "name": "Marcus Tullius Cicero",
+        "quotes": [
+            "A room without books is like a body without a soul.",
+            "To be ignorant of what occurred before you were born is to remain always a child. For what is the worth of human life, unless it is woven into the life of our ancestors by the records of history?",
+            "If we are not ashamed to think it, we should not be ashamed to say it.",
+            "Friendship improves happiness, and abates misery, by doubling our joys, and dividing our grief",
+            "Gratitude is not only the greatest of virtues, but the parent of all others."
+        ]
+    },
+    {
+        "name": "Mahatma Gandhi",
+        "quotes": [
+            "Be the change that you wish to see in the world.",
+            "Live as if you were to die tomorrow. Learn as if you were to live forever.",
+            "An eye for an eye will only make the whole world blind.",
+            "Happiness is when what you think, what you say, and what you do are in harmony.",
+            "When I despair, I remember that all through history the way of truth and love have always won. There have been tyrants and murderers, and for a time, they can seem invincible, but in the end, they always fall. Think of it--always."
+        ]
+    }
+]
