@@ -5,17 +5,22 @@
 //  Created by Yasuko Kurata on 2021-02-05.
 //
 
+import Foundation
+
 import SwiftUI
 
-struct ContentView: View {
+struct QuoteListView: View {
+    
+    @ObservedObject var model = QuoteModel()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text("Hello")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        QuoteListView()
     }
 }
+
