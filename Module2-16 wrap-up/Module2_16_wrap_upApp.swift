@@ -11,7 +11,7 @@ import SwiftUI
 struct Module2_16_wrap_upApp: App {
     var body: some Scene {
         WindowGroup {
-            QuoteListView()
+            AuthorListView()
         }
     }
 }

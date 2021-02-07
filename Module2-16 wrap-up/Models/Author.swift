@@ -8,8 +8,11 @@
 import Foundation
 
 
-class Quote: Identifiable, Decodable {
+class Author: Identifiable, Decodable {
+    
     var id:UUID?
     var name:String
-    var quote:String
+    var quotes:[String]
+    var image:String
+    
 }

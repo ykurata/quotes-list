@@ -8,11 +8,11 @@
 import Foundation
 
 
-class QuoteModel: ObservableObject {
+class AuthorModel: ObservableObject {
     
-    @Published var quotes = [Quote]()
+    @Published var authors = [Author]()
     
     init() {
-        self.quotes = DataService.getLocalData()
+        self.authors = DataService.getLocalData()
     }
 }

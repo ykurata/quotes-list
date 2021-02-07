@@ -10,36 +10,43 @@ import Foundation
 
 class DataService {
     
-    static func getLocalData() -> [Quote] {
+    static func getLocalData() -> [Author] {
         
-        let pathString = Bundle.main.path(forResource: "quotes", ofType: "json")
+        // Get path in app bundle
+        let pathString = Bundle.main.path(forResource: "Data", ofType: "json")
         
-        guard pathString != nil else{
-            return [Quote]()
+        guard pathString != nil else {
+            return [Author]()
         }
         
+        // Create URL object
         let url = URL(fileURLWithPath: pathString!)
         
         do {
+            // Create Data object
             let data = try Data(contentsOf: url)
             
+            // Decode the json data
             let decoder = JSONDecoder()
             
             do {
-                let quoteData = try decoder.decode([Quote].self, from: data)
+                let authorData = try decoder.decode([Author].self, from: data)
                 
-                for q in quoteData {
-                    q.id = UUID()
+                for a in authorData {
+                    a.id = UUID()
                 }
-                return quoteData
+                return authorData
             }
             catch {
                 print(error)
             }
+            
         }
         catch {
             print(error)
         }
-        return [Quote]()
+        
+        return [Author]()
     }
+    
 }

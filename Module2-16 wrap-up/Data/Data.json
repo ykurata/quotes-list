@@ -7,7 +7,8 @@
             "If you can't explain it to a six year old, you don't understand it yourself.",
             "Logic will get you from A to Z; imagination will get you everywhere.",
             "Life is like riding a bicycle. To keep your balance, you must keep moving."
-        ]
+        ],
+        "image": "ambition"
     },
     {
         "name": "Mark Twain",
@@ -17,7 +18,8 @@
             "Whenever you find yourself on the side of the majority, it is time to reform (or pause and reflect).",
             "The man who does not read has no advantage over the man who cannot read.",
             "Never put off till tomorrow what may be done day after tomorrow just as well."
-        ]
+        ],
+        "image": "calm"
     },
     {
         "name": "Oscar Wilde",
@@ -27,7 +29,8 @@
             "To live is the rarest thing in the world. Most people exist, that is all.",
             "I am so clever that sometimes I don't understand a single word of what I am saying.",
             "We are all in the gutter, but some of us are looking at the stars."
-        ]
+        ],
+        "image": "focus"
     },
     {
         "name": "Marcus Tullius Cicero",
@@ -37,7 +40,8 @@
             "If we are not ashamed to think it, we should not be ashamed to say it.",
             "Friendship improves happiness, and abates misery, by doubling our joys, and dividing our grief",
             "Gratitude is not only the greatest of virtues, but the parent of all others."
-        ]
+        ],
+        "image": "reflect"
     },
     {
         "name": "Mahatma Gandhi",
@@ -47,6 +51,7 @@
             "An eye for an eye will only make the whole world blind.",
             "Happiness is when what you think, what you say, and what you do are in harmony.",
             "When I despair, I remember that all through history the way of truth and love have always won. There have been tyrants and murderers, and for a time, they can seem invincible, but in the end, they always fall. Think of it--always."
-        ]
+        ],
+        "image": "reflect2"
     }
 ]
