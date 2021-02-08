@@ -14,24 +14,52 @@ struct AuthorListView: View {
     @ObservedObject var model = AuthorModel()
 
     var body: some View {
-        VStack {
-            Text("Quotes")
-                .font(.title)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.leading)
-            List(model.authors) { a in
-                VStack {
-                    Image(a.image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 300, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .clipped()
-                        .cornerRadius(10)
-                }
+        
+        NavigationView {
+            ScrollView {
                 
+                ForEach(model.authors) { a in
+                    VStack {
+                        
+                        NavigationLink(
+                            destination: DetailsView(author: a),
+                            label: {
+                                
+                                // MARK: row item
+                                ZStack {
+                                    Image(a.image)
+                                        .resizable()
+                                        .padding(.top)
+                                        .scaledToFill()
+                                        .frame(width: .none, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        .clipped()
+                                        .cornerRadius(10)
+                                    VStack(alignment: .leading){
+                                        Text(a.quotes[0])
+                                            .font(.largeTitle)
+                                            .fontWeight(.bold)
+                                            .foregroundColor(Color.white)
+                                        
+                                        HStack {
+                                            Text("―")
+                                                .foregroundColor(Color.white)
+                                            Text(a.name)
+                                                .foregroundColor(Color.white)
+                                        }
+                                        .padding(.top)
+                                    }
+                                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                                    
+                                }
+                                .padding(/*@START_MENU_TOKEN@*/[.top, .leading, .trailing]/*@END_MENU_TOKEN@*/)
+                            })
+                        
+                    }
+                }
+            
             }
+            .navigationBarTitle("Quotes")
         }
-        .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
         
     }
 }
